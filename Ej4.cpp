@@ -19,21 +19,21 @@ int main()
 
 	if(a >= b && a >= c)
 	{
-		if(b + c >= a)
+		if(b + c > a)
 			std::cout << "Forman triangulo" << std::endl;
 		else
 			std::cout << "No forman triangulo" << std::endl;
 	}
 	else if(b >= a && b >= c)
 	{
-		if (a + c >= b)
+		if (a + c > b)
 			std::cout << "Forman triangulo" << std::endl;
 		else
 			std::cout << "No forman triangulo" << std::endl;
 	}
 	else if(c >= a && c >= b)
 	{
-		if (a + b >= a)
+		if (a + b > a)
 			std::cout << "Forman triangulo" << std::endl;
 		else
 			std::cout << "No forman triangulo" << std::endl;
