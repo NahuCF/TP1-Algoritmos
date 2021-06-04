@@ -10,37 +10,25 @@
 
 int main()
 {
-	int sueldos[100], condicion1 = 0, condicion2 = 0, condicion3 = 0, condicion4 = 0;
+	int sueldo = -1, condicion1 = 0, condicion2 = 0, condicion3 = 0, condicion4 = 0;
 
 	std::cout << "Inserte los sueldos uno a uno:" << std::endl;
 
-	// Resivo inputs
-	for(int i = 0; i < sizeof(sueldos) / sizeof(int); i++)
+	// Reviso condiciones
+	while(sueldo != 0)
 	{
-		std::cin >> sueldos[i];
-		if(sueldos[i] == 0)
-			break;
+		std::cin >> sueldo;
+
+		if (sueldo < 1520)
+			condicion1++;
+		else if (sueldos >= 1520 && sueldo < 2780)
+			condicion2++;
+		else if (sueldo >= 2780 && sueldo < 5990)
+			condicion3++;
+		else if (sueldo >= 5999)
+			condicion4++;
 	}
 
-	// Reviso condiciones
-	for (int i = 0; i < sizeof(sueldos) / sizeof(int); i++)
-	{
-		if(sueldos[i] != 0)
-		{
-			if(sueldos[i] < 1520)
-				condicion1++;
-			else if(sueldos[i] >= 1520 && sueldos[i] < 2780)
-				condicion2++;
-			else if(sueldos[i] >= 2780 && sueldos[i] < 5990)
-				condicion3++;
-			else if(sueldos[i] >= 5999 )
-				condicion4++;
-		}
-		else
-		{
-			break;
-		}
-	}
 
 	// Le hago un rico cout a todo
 	std::cout << "Condicion1: " << condicion1 << std::endl;
