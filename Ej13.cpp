@@ -9,9 +9,7 @@
 
 // ---IMPORTANTE---------
 // Si un input cumple varias condiciones
-// se tomara como si se hubiese escrito
-// 2 inputs (se sumara 2 al contador de
-// valores ingresados)
+// contara solo la primera condicion que cumplio
 
 void SetValores(float input, float& numeroAIgualar, float& total, int& numeroSumarUno)
 {
