@@ -15,5 +15,5 @@ int main()
 
 	std::cout << "Dia: " << numberChar[6] << numberChar[7] << std::endl;
 	std::cout << "Mes: " << numberChar[4] << numberChar[5] << std::endl;
-	std::cout << "Año: " << numberChar[0] << numberChar[1] << numberChar[2] << numberChar[3] << std::endl;
+	std::cout << "Anio: " << numberChar[0] << numberChar[1] << numberChar[2] << numberChar[3] << std::endl;
 }
